@@ -1,30 +1,32 @@
-# IMDb Movie Data Acquisition and Cleaning
+# 🎬 IMDb Movie Data Acquisition and Cleaning
 
-We live in a world full of digital footprints—every interaction we have online leaves behind clues about our behaviors, preferences, and decisions. But before these footprints become truly useful in understanding and predicting human behavior, there's quite a bit of work to do—like carefully collecting, cleaning, and structuring the data. 
-
-This project walks through this process using data from the Internet Movie Database (IMDb). IMDb is the largest database on films and filmmakers, containing records on who worked on which movie from 1900 to today. Audiences frequently use IMDb to find information about movies and TV shows, while industry professionals rely on it to make strategic decisions about hiring talent, investing in film projects, and understanding market dynamics.
-
-In this notebook, I developed a pipeline to access and transform IMDb data into structured, clean datasets. Specifically, this project:
-- **Acquires** data directly from IMDb's servers, which provides the most up-to-date information and eliminate the need for manual downloads and storage in local directories.
-- **Integrates** multiple related IMDb datasets (movie information, ratings, filmmaker information) to create a comprehensive dataset.
-- **Preprocesses and cleans** data, handling challenges such as missing values, duplicates, inconsistent formats, and data type mismatches.
-- **Provides insights** into the industry through exploratory data analysis, uncovering trends in movie characteristics, team composition, and audience ratings. 
-
-
-**Data Sources:**  
-- IMDb Title Basics: Contains basic movie information such as movie IDs (`tconst`), title types, release years, genres, and runtime.
-- IMDb Title Ratings: Provides movie ratings and the number of votes.
-- IMDb Title Principals: Lists the people involved in the making of movies, including their IDs (`nconst`), professions, and the movies they have worked on.
+Large-scale digital-trace data can reveal powerful insights into human behavior, but only if we first transform raw data into a structured, analysis-ready format. In this project, I developed a complete pipeline for acquiring, cleaning, and integrating data from the Internet Movie Database (IMDb)—the largest repository of film and filmmaker records spanning from 1900 to the present. IMDb is widely used by audiences to explore movie information, and by industry professionals to make strategic decisions related to hiring, investment, and market analysis.
 
 **Key Skills:** Automated Data Acquisition, Data Cleaning & Transformation, Data Integration, Exploratory Data Analysis, Data Visualization
 
-**Results:**
-- Movie Dataset: Contains 300,000+ movies released between 2000 and 2024, with detailed metadata, including movie IDs, titles, genres, release years, ratings, and popularity metrics.
-- Filmmaker Dataset: Contains 600,000+ filmmakers working in creative roles, with detailed metadata, including filmmaker IDs, names, professions, and the movies they have worked on.
+## 🚀 Project Overview
 
-These datasets serve as the foundation for my PhD dissertation, where I conducted dynamic network analysis and predictive modeling to understanding factors driving the success of films and filmmakers.
+- **Acquiring**: Automatically downloading data directly from IMDb’s servers, ensuring we always work with the most current records.
+- **Integrating**: Merging multiple IMDb datasets—including movie details, ratings, and crew information—into a single comprehensive dataset.
+- **Cleaning & Transformation**: Handling missing values, duplicates, inconsistent formats, and converting data types to create structured, analysis-ready datasets.
+- **Exploratory Analysis**: Conducting statistical summaries and visualizations to uncover trends in movie production, genre popularity, and creative team composition.
 
-## Visualizing Trends in the Movie Industry between 2000 and 2024
+## 📚 Data Sources
+
+- **IMDb Title Basics:** Contains movie IDs (`tconst`), title types, release years, genres, and runtime.
+- **IMDb Title Ratings:** Provides ratings and vote counts for films.
+- **IMDb Title Principals:** Lists film crew members, including their IDs (`nconst`), roles, and the movies they have worked on.
+
+## 📊 Key Results
+
+- **Movie Dataset:** Over 300,000 movies from 2000 to 2024, with detailed metadata (titles, genres, release years, ratings, etc.).
+- **Filmmaker Dataset:** Over 600,000 creative professionals, including their names, roles, birth years, and filmography data.
+
+These datasets serve as the foundation for my PhD dissertation, where I conducted dynamic network analysis and predictive modeling to understanding the key drivers of film and filmmaker success.
+
+##  🖼️ Visualizations 
+
+Below are sample visualizations that highlight key trends in the movie industry from 2000 to 2024:
 
 ![Movie Production Trends](image/num_movies_2000_2024.png)
 
@@ -32,8 +34,15 @@ These datasets serve as the foundation for my PhD dissertation, where I conducte
 
 ![Share of Creative Roles](image/creative_roles_percentage_2000_2024.png)
 
+## 💡 Applications of this Work
 
-## How to Run the Code
+The methods demonstrated here have broad applications beyond the film industry:
+- **Strategic Decision-Making:** Organizations can leverage similar data acquisition and cleaning pipelines to consolidate and analyze large datasets for informed decision-making.
+- **Market Analysis:** Use detailed metadata to uncover trends, forecast market dynamics, or assess consumer behavior.
+- **Human Resources:** Apply these techniques to analyze employee performance data, support talent management, and improve organizational efficiency.
+- **Public Policy:** Researchers and policymakers can use similar methodologies to analyze large-scale datasets, informing policies related to cultural trends, media consumption, or labor markets.
+
+## 💻 How to Use This Repository
 
 1. Clone the Repository:  
    ```bash
