@@ -1,14 +1,14 @@
-# IMDb Movie Data Acquisition and Cleaning Notebook
+# IMDb Movie Data Acquisition and Cleaning
 
-We live in a world full of digital footprints—every interaction we have online leaves behind clues about our behaviors, preferences, and decisions. But before these digital footprints become truly useful in understanding and predicting human behavior, there's quite a bit of work to do—like carefully collecting, cleaning, and structuring the data. 
+We live in a world full of digital footprints—every interaction we have online leaves behind clues about our behaviors, preferences, and decisions. But before these footprints become truly useful in understanding and predicting human behavior, there's quite a bit of work to do—like carefully collecting, cleaning, and structuring the data. 
 
-This project walks through this process using data from the Internet Movie Database (IMDb). IIMDb is the largest database on films and filmmakers, containing records on who worked on which movie from 1900 to today. Audiences frequently use IMDb to find information about movies and TV shows, while industry professionals also rely on it for strategic decisions about hiring talent, investing in film projects, and understanding market dynamics.
+This project walks through this process using data from the Internet Movie Database (IMDb). IMDb is the largest database on films and filmmakers, containing records on who worked on which movie from 1900 to today. Audiences frequently use IMDb to find information about movies and TV shows, while industry professionals rely on it to make strategic decisions about hiring talent, investing in film projects, and understanding market dynamics.
 
 In this notebook, I developed a pipeline to access and transform IMDb data into structured, clean datasets. Specifically, this project:
-- Acquires data directly from IMDb's servers, which provides the most up-to-date information and eliminate the need for manual downloads and storage in local directories.
-- Integrates multiple related IMDb datasets (movie information, ratings, filmmaker information) to create a comprehensive dataset.
-- Preprocesses and cleans data, handling challenges such as missing values, duplicates, inconsistent formats, and data type mismatches.
-- Provides initial insights into the industry through exploratory data analysis, uncovering trends in movie characteristics, team composition, and audience ratings. 
+- **Acquires** data directly from IMDb's servers, which provides the most up-to-date information and eliminate the need for manual downloads and storage in local directories.
+- **Integrates** multiple related IMDb datasets (movie information, ratings, filmmaker information) to create a comprehensive dataset.
+- **Preprocesses and cleans** data, handling challenges such as missing values, duplicates, inconsistent formats, and data type mismatches.
+- **Provides insights** into the industry through exploratory data analysis, uncovering trends in movie characteristics, team composition, and audience ratings. 
 
 
 **Data Sources:**  
@@ -17,8 +17,6 @@ In this notebook, I developed a pipeline to access and transform IMDb data into 
 - IMDb Title Principals: Lists the people involved in the making of movies, including their IDs (`nconst`), professions, and the movies they have worked on.
 
 **Key Skills:** Automated Data Acquisition, Data Cleaning & Transformation, Data Integration, Exploratory Data Analysis, Data Visualization
-
-**Tools:** Python, Pandas, Matplotlib, Seaborn, Ast, Math, Unidecode, Scipy, Re
 
 **Results:**
 - Movie Dataset: Contains 300,000+ movies released between 2000 and 2024, with detailed metadata, including movie IDs, titles, genres, release years, ratings, and popularity metrics.
@@ -37,17 +35,17 @@ These datasets serve as the foundation for my PhD dissertation, where I conducte
 
 ## How to Run the Code
 
-1. **Clone the Repository:**  
+1. Clone the Repository:  
    ```bash
    git clone https://github.com/nhunguyen0901/imdb-data-acquisition-cleaning.git
    cd imdb-data-acquisition-cleaning
 
-2. **Install Dependencies:**
+2. Install Dependencies:
 Ensure Python is installed, and then set up the required libraries using:
     ```bash
     pip install -r requirements.txt
 
-3. **Run the Notebook:**
+3. Run the Notebook:
 Open the Jupyter Notebook file (`IMDb_Data_Acquisition_Cleaning.ipynb`) using Jupyter Notebook or JupyterLab. Follow the cells sequentially to reproduce the results.
 
 
